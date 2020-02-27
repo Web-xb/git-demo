@@ -1,0 +1,84 @@
+/* 注册页的样式 */
+.header{
+	height: 100px;
+	border-bottom: 2px solid #B1191A;
+}
+.reg_page{
+	height: 480px;
+	border: 1px solid #CCCCCC;
+	margin-top: 20px;
+}
+.reg_page h3{
+	height: 40px;
+	border: 1px solid #CCCCCC;
+	background: #ececec;
+	line-height: 40px;
+	padding: 0 10px;
+}
+.reg_page h3 em{
+	float: right;
+}
+.reg_form{
+	width: 600px;
+	height: 420px;
+	margin: 20px auto;
+}
+.reg_form li{
+	margin-top: 30px;
+}
+.reg_form label{
+	display: inline-block;
+	width: 100px;
+	height: 35px;
+	line-height: 35px;
+	text-align: right;
+}
+.reg_form .inpt{
+	width: 235px;
+	height: 34px;
+	border: 1px solid #CCCCCC;
+}
+.list_btn{
+	width: 100px;
+	height: 30px;
+	border: 1px solid #ccc;
+	background: #FFFFFF;
+	margin-left: 5px;
+}
+.list_btn:hover{
+	border: 1px solid #000;
+}
+/* .error{
+	color: #999;
+	background: url(../upload/gt.png) no-repeat;
+	background-size: 13px;
+	padding-left: 20px;
+} */
+.success{
+	color: #40b83f;
+}
+.error img,
+.success img{
+	width: 20px;
+}
+.agree{
+	margin-left: 100px;
+}
+.agree input{
+	vertical-align: middle;
+	margin-right: 5px;
+}
+.agree a{
+	color: #1ba1e6;
+}
+.reg_login{
+	width: 200px;
+	height: 34px;
+	font-size: 14px;
+	background: #C81623;
+	color: #FFFFFF;
+	margin-left: 120px;
+}
+.hooter .mod_copyright{
+	margin-bottom: 40px;
+}

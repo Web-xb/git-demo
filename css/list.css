@@ -1,0 +1,86 @@
+/* 列表页的样式 */
+.main{
+	background: #FF9C03;
+}
+.main_shop{
+	border-top: 10px solid #F65600;
+}
+.box_hd{
+	position: relative;
+	height: 1020px;
+}
+
+.main_box{
+	position: absolute;
+	left: 420px;
+	margin-top: 20px;
+}
+.main_box li{
+	float: left;
+}
+.main_box img{
+	width: 70px;
+}
+.main_box .main_txt{
+	padding: 0 20px;
+	color: #FFFFFF;
+}
+.main_txt h3{
+	font-size: 30px;
+	font-weight: bold;
+	padding: 10px 0;
+}
+.main_txt p{
+	font-size: 20px;
+	padding-top: 10px;
+}
+.box_bd{
+	position: absolute;
+	top: 90px;
+}
+.box_bd li{
+	float: left;
+	margin: 15px;
+	border: 1px solid transparent;
+}
+.box_bd li:hover{
+	border: 1px solid #f40;
+}
+
+/* 分页跳转栏 */
+.page{
+	text-align: center;
+	padding: 40px 0 20px 0;
+}
+.page_num a{
+	display: inline-block;
+	width: 36px;
+	height: 36px;
+	border: 1px solid #CCCCCC;
+	background: #F7F7F7;
+	line-height: 36px;
+}
+.page_num .page_prev{
+	width: 83px;
+}
+.page_num .current{
+	background: transparent;
+	border: 1px solid transparent;
+}
+.page_skip input{
+	width: 35px;
+	height: 35px;
+	border: 1px solid #CCCCCC;
+	text-align: center;
+	transition: all 0.5s;
+}
+.page_skip input:focus{
+	width: 55px;
+	border: 1px solid #2FA8EC;
+}
+.page_skip button{
+	width: 54px;
+	height: 35px;
+	border: 1px solid #CCCCCC;
+	background: #F7F7F7;
+}

@@ -1,0 +1,230 @@
+.search {
+	margin-left: 300px;
+}
+
+.logo .links {
+	overflow: hidden;
+	display: block;
+	position: absolute;
+	width: 100px;
+	height: 40px;
+	line-height: 99em;
+	top: 14px;
+	left: 180px;
+}
+
+.logo .links b {
+	display: block;
+	position: absolute;
+	width: 100px;
+	height: 40px;
+	line-height: 99em;
+	top: 0;
+	right: 0;
+	background: url(../upload/car-icon.png) no-repeat;
+}
+
+/* 购物车商品栏 */
+.car_nav em {
+	width: 100px;
+	height: 33px;
+	border-bottom: 1px solid #D81E06;
+	color: #D81E06;
+	font-size: 16px;
+	font-weight: bold;
+	padding-bottom: 5px;
+	cursor: pointer;
+}
+
+.car_thead {
+	position: relative;
+	display: block;
+	height: 35px;
+	line-height: 35px;
+	margin-top: 5px;
+	padding: 0 10px;
+	background: #f3f3f3;
+	border: 1px solid #e9e9e9;
+	font-size: 14px;
+}
+
+.car_thead .t_goods {
+	position: absolute;
+	top: 0;
+	left: 130px;
+}
+
+.car_thead .t_price {
+	position: absolute;
+	top: 0;
+	right: 520px;
+}
+
+.car_thead .t_num {
+	position: absolute;
+	top: 0;
+	right: 400px;
+}
+
+.car_thead .t_sum {
+	position: absolute;
+	top: 0;
+	right: 270px;
+}
+
+.car_thead .t_action {
+	position: absolute;
+	top: 0;
+	right: 130px;
+}
+
+.car_item {
+	position: relative;
+	margin-top: 10px;
+	border-top: 1px solid #C2BFBE;
+	padding: 0 0 1px 10px;
+	height: 110px;
+}
+.check_car_item{
+	background: #fff4e8;
+}
+.car_item .p_checkbox {
+	position: absolute;
+	left: 10px;
+	top: 20px;
+	width: 30px;
+	min-height: 10px;
+}
+
+.car_item .p_goods {
+	position: relative;
+}
+
+.p_goods .p_img {
+	position: absolute;
+	left: 40px;
+	top: 20px;
+}
+
+.p_goods .p_msg {
+	position: absolute;
+	left: 135px;
+	top: 20px;
+	width: 210px;
+}
+
+.p_version {
+	position: absolute;
+	left: 430px;
+	top: 20px;
+	width: 50px;
+}
+
+.p_price {
+	position: absolute;
+	right: 510px;
+	top: 20px;
+	width: 50px;
+}
+
+.p_num {
+	position: absolute;
+	right: 400px;
+	top: 20px;
+	width: 50px;
+}
+
+.decrement,
+.increment {
+	float: left;
+	cursor: default;
+	width: 16px;
+	height: 18px;
+	padding: 1px 0;
+	text-align: center;
+	color: #e9e9e9;
+	border: 1px solid #cacbcb;
+	background: #FFFFFF;
+}
+.increment{
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	right: -30px;
+	color: #666666;
+}
+.p_num .itxt {
+	position: absolute;
+	left: 17px;
+	top: 0;
+	border: 1px solid #cacbcb;
+	width: 42px;
+	height: 18px;
+	line-height: 18px;
+	text-align: center;
+	padding: 1px;
+	margin: 0;
+	font-size: 12px;
+	font-family: verdana;
+	color: #333;
+	-webkit-appearance: none;
+}
+.p_sum{
+	position: absolute;
+	right: 250px;
+	top: 20px;
+	font-size: 14px;
+	font-weight: bold;
+}
+.p_del{
+	position: absolute;
+	right: 130px;
+	top: 20px;
+}
+
+/* 结算模块 */
+.car_floatbar{
+	position: relative;
+	padding: 10px 0 0 10px;
+	margin-bottom: 40px;
+}
+.remove_batch{
+	position: absolute;
+	top: 10px;
+	left: 100px;
+}
+.clear_all{
+	position: absolute;
+	top: 10px;
+	left: 240px;
+}
+.amount_sum{
+	position: absolute;
+	top: 10px;
+	right:300px;
+}
+.amount_sum em,
+.price_sum em{
+	font-size: 14px;
+	font-weight: bold;
+	color: red;
+}
+.price_sum{
+	position: absolute;
+	top: 10px;
+	right:170px;
+}
+.btn_sum{
+	position: absolute;
+	top: 0;
+	right: 40px;
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center;
+	line-height: 38px;
+	width: 100px;
+	height: 38px;
+	color: #FFFFFF;
+	background: #E64347;
+	cursor: pointer;
+}

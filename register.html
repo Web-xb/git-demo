@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>注册页面</title>
+		<script src="js/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<link rel="stylesheet" type="text/css" href="css/register.css" />
+
+
+	</head>
+	<body>
+		<div class="w">
+			<div class="header">
+				<div class="logo">
+					<a href="index.html">
+						<img src="img/logo.png">
+					</a>
+				</div>
+			</div>
+			<div class="reg_page">
+				<h3>
+					注册新用户
+					<em>我有账号，去<a href="javascript:;" class="col-red">登陆</a></em>
+				</h3>
+				<div class="reg_form">
+					<form action="demo.php" method="">
+						<ul>
+							<li>
+								<label for="tel">手机号：</label>
+								<input type="tel" class="inpt" id="tel" placeholder="请输入您的手机号" />
+								<button type="button" class="list_btn">获取验证码</button>
+								<!-- <span class="error"> -->
+								<!-- 请输入正确的手机号 -->
+								<!-- <img src="img/cw.png"> -->
+								<!-- 手机号码格式不正确，请重新输入 -->
+								<!-- </span> -->
+							</li>
+							<li>
+								<label for="note">短信验证码：</label>
+								<input type="text" class="inpt" id="note" placeholder="请输入您的短信验证码" />
+							</li>
+							<li>
+								<label for="entry1">登录密码：</label>
+								<input type="text" class="inpt" id="entry1" placeholder="请输入您的登录密码" />
+								<span class="success">
+									<!-- <img src="img/zq.png">
+									恭喜您输入正确 -->
+								</span>
+							</li>
+							<li>
+								<label for="entry2">确认密码：</label>
+								<input type="text" class="inpt" id="entry2" placeholder="请再次输入您的密码" />
+								<span class="error">
+									<!-- <img src="img/cw.png"> -->
+									<!-- 密码不一致，请重新输入 -->
+								</span>
+							</li>
+							<li class="agree">
+								<input type="checkbox" />同意协议并注册
+								<a href="javascript:;">《用户协议》</a>
+							</li>
+							<li>
+								<input type="submit" value="完成注册" class="reg_login" />
+							</li>
+						</ul>
+					</form>
+				</div>
+			</div>
+			<div class="hooter">
+				<div class="mod_copyright">
+					<p class="mod_copyright_links">
+						<a href="javascript:;">关于我们 | </a>
+						<a href="javascript:;">联系我们 | </a>
+						<a href="javascript:;">联系客服 | </a>
+						<a href="javascript:;">合作招商 | </a>
+						<a href="javascript:;">商家帮助 | </a>
+						<a href="javascript:;">营销中心 | </a>
+						<a href="javascript:;">手机点优购 | </a>
+						<a href="javascript:;">友情链接 | </a>
+						<a href="javascript:;">销售联盟 | </a>
+						<a href="javascript:;">购物社区 | </a>
+						<a href="javascript:;">风险监测 | </a>
+						<a href="javascript:;">隐私政策 | </a>
+						<a href="javascript:;">点优购公益 | </a>
+						<a href="javascript:;">English Site </a>
+					</p>
+					<p class="mod_copyright_info">
+						地址：浙江省绍兴市越城区群贤中路绍兴文理学院元培学院图书馆
+						邮编：325800 电话：18367747079
+						邮箱：2547710628@qq.com<br />
+						互联网药品信息服务资格证书（浙）-经营性-2018-0010|短消息类服务接入代码使用证书：号【2016】00154-A01|信息网络传播视听许可证：1109364号|出版物网络交易平台服务经营备案号：新出发浙备字第002号
+					</p>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript">
+			var btn = document.querySelector('.list_btn');
+			var time = 59;
+			btn.addEventListener('click', function() {
+				this.disabled = true;
+				getClock();
+				var timer = setInterval(getClock,1000);
+					function getClock() {
+						if (time == 0) {
+							clearInterval(timer);
+							btn.disabled = false;
+							btn.innerHTML = '获取验证码';
+							time = 59;
+						} else {
+							btn.innerHTML = time + '秒重新发送';
+							time--;
+						}
+					}
+			});
+		</script>
+	</body>
+</html>
